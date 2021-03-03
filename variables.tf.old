@@ -1,0 +1,32 @@
+variable "availability_zones" {
+  type        = list(string)
+  description = "Zonmas de disponibilidad donde provisionar las subnets."
+}
+
+variable "cidr_block" {
+  type = string
+}
+
+variable "workspace_id" {
+  type = string
+}
+
+variable "region" {
+  type        = string
+  description = "The target AWS region for the cluster."
+}
+
+variable "vpc" {
+  type        = string
+  description = "An existing network (VPC ID) into which the cluster should be installed."
+}
+
+variable "public_subnets" {
+  type        = list(string)
+  description = "Existing public subnets into which the cluster should be installed."
+}
+
+variable "private_subnets" {
+  type        = list(string)
+  description = "Existing private subnets into which the cluster should be installed."
+}

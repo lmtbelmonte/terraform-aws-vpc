@@ -1,0 +1,14 @@
+# autor : Luis Merino Troncoso
+# fecha : 02/03/2021
+# descripcion : Automating Infrastructure for an E-commerce Website with Terraform and AWS
+#               Network layout from scratch
+
+resource "aws_vpc" "vpc" {
+  cidr_block           = var.cidr_block
+  enable_dns_hostnames = true
+  enable_dns_support   = true
+
+  tags = {
+    Name = var.workspace_id-vpc
+  }
+}
