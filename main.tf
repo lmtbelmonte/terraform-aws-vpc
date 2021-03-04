@@ -5,14 +5,13 @@
 
 # Creacion del backend en s3
 /*terraform {
-  required_version = ">= 0.12.0"
   backend "s3" {
     region  = "us-east-1"
     profile = "default"
     key     = "terraform-aws-network"
     bucket  = "koffeeluv"
   }
-} */
+}*/
 
 /* # ejecucion del module vpc pra desplegar la red
 module "vpc" {
