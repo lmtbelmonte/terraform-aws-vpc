@@ -1,1 +1,2 @@
-# terraform-aws-vpc
+# Automating Infrastructure for an E-commerce Website with Terraform and AWS 
+terraform-aws-vpc
